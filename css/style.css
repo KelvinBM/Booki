@@ -19,6 +19,7 @@ body {
 }
 
 .main-container {
+    max-width: 1440px;
     width: 100%;
     padding: 0 50px;
     box-sizing: border-box;
@@ -51,6 +52,68 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 79px;
+    width: auto;
+    /* background-color: aqua; */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* background-color: #e0e0e0; */
+    width: 150px;
+}
+
+.logo {
+    width: 62px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 360px;
+    height: 35px;
+    /* background-color: yellow; */
+}
+
+.nav-links-container { /* ul */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    font-size: 11pt;
+    margin: 0 auto;
+    height: inherit;
+    width: 280px;
+}
+
+.nav-links {
+    text-decoration: none;
+    /* background-color: #0065FC; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nav-links li {
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: #0065FC;
+    /* background-color: aliceblue; */
+}
+
+.hover-bar:hover {
+    border-top: #0065FC 3px solid;
+}
+
+.nav-link {
+    grid-row: 2;
+}
+
 
 /****** Accommodation And Popular ***********/
 .accommodation-and-popular {
