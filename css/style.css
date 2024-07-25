@@ -91,28 +91,24 @@ nav {
     width: 280px;
 }
 
-.nav-links {
+.nav-link {
+    box-sizing: border-box;
     text-decoration: none;
-    /* background-color: #0065FC; */
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    background-color: #909294;
+    margin-top: auto;
+    padding-top: 35px;
 }
 
-.nav-links li {
-    box-sizing: border-box;
+.nav-link:hover {
+    border-top: 3px solid #0065FC;
+}
+
+.nav-link li {
     list-style-type: none;
-    text-decoration: none;
     color: #0065FC;
     /* background-color: aliceblue; */
 }
 
-.hover-bar:hover {
-    border-top: #0065FC 3px solid;
-}
-
-.nav-link {
-    grid-row: 2;
-}
 
 
 /****** Accommodation And Popular ***********/
