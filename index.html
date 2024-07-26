@@ -18,15 +18,39 @@
 <body>
     <div class="main-container">
         <header>
-            <div class="logo-container"><img class="logo" src="images/logo/Booki.png" alt="Booki page logo"></div>
+            <div class="logo-container">
+                <img class="logo" src="images/logo/Booki.png">
+            </div>
             <nav>
-                <ul class="nav-links-container">
-                    <a class="nav-link" href="#"><li>Accommodation</li></a>
-                    <a class="nav-link" href="#"><li>Things to Do</li></a>
-                </ul>
+                <a class="nav-link-container">
+                    <p>Accommodation</p>
+                </a>
+                <a class="nav-link-container">
+                    <p>Things to Do</p>
+                </a>
             </nav>
         </header>
         <main>
+            <div class="info-container">
+                <div class="info-headline">
+                    <h2>Find a place to stay for your dream vacation</h2>
+                    <p>In the heart of the city or surrounded by nature</p>
+                </div>
+                <form class="search-container">
+                    <div id="location-dot-container"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></div>
+                    <input type="text" id="search-bar" name="search-bar" value="Marsielle, France">
+                    <input type="submit" id="search-button" name="search-button" value="Search">
+                </form>
+                <form class="filter-container">
+                    <h3 id="filter">Filters</h3> 
+                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-money-bill-wave fa-lg" style="color: #0065fc;"></i><input class="filter-button" type="button" value="Budget"></div>
+                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-person fa-lg" style="color: #0065fc;"></i><input class="filter-button" type="button" value="Family-Friendly"></div>
+                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-heart fa-lg" style="color: #0065fc;"></i><input class="filter-button" type="button" value="Romantic"></div>
+                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-fire fa-lg"></i><input class="filter-button" type="button" value="Our Top Picks"></div>
+                </form>
+                <!-- cannot paste html element from font awesome that actually matches the mockup -->
+                <p><i class="info-icon fa-solid fa-circle-info" style="color: #0065fc;"></i>There are over 500 available places to stay in this city</p>
+            </div>
             <div class="accommodation-and-popular">
                 <section class="accommodation">
                     <h2>Marsielle Accommodation</h2>
