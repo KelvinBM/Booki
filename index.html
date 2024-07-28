@@ -33,7 +33,7 @@
         <main>
             <div class="info-container">
                 <div class="info-headline">
-                    <h2>Find a place to stay for your dream vacation</h2>
+                    <h1>Find a place to stay for your dream vacation</h1>
                     <p>In the heart of the city or surrounded by nature</p>
                 </div>
                 <form class="search-container">
@@ -41,19 +41,25 @@
                     <input type="text" id="search-bar" name="search-bar" value="Marsielle, France">
                     <input type="submit" id="search-button" name="search-button" value="Search">
                 </form>
-                <form class="filter-container">
-                    <h3 id="filter">Filters</h3> 
-                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-money-bill-wave fa-lg" style="color: #0065fc;"></i><input class="filter-button" type="button" value="Budget"></div>
-                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-person fa-lg" style="color: #0065fc;"></i><input class="filter-button" type="button" value="Family-Friendly"></div>
-                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-heart fa-lg" style="color: #0065fc;"></i><input class="filter-button" type="button" value="Romantic"></div>
-                    <div class="filter-button-container"><i class="filter-icon fa-solid fa-fire fa-lg"></i><input class="filter-button" type="button" value="Our Top Picks"></div>
-                </form>
+                <section class="filter-container">
+                    <h2 id="filter">Filters</h2> 
+                    <button class="filter-button"><i class="filter-icon fa-solid fa-money-bill-wave fa-lg"></i>Budget</button>
+                    <button class="filter-button"><i class="filter-icon fa-solid fa-person fa-lg"></i>Family-Friendly</button>
+                    <button class="filter-button"><i class="filter-icon fa-solid fa-heart fa-lg"></i>Romantic</button>
+                    <button class="filter-button"><i class="filter-icon fa-solid fa-fire fa-lg"></i>Our Top Picks</button>
+                </section>
                 <!-- cannot paste html element from font awesome that actually matches the mockup -->
-                <p><i class="info-icon fa-solid fa-circle-info" style="color: #0065fc;"></i>There are over 500 available places to stay in this city</p>
+                <p class="info"><i class="info-icon fa-solid fa-info"></i>There are over 500 available places to stay in this city</p>
             </div>
+            <!-- git commit -m "Changed title header sizes from the search section, changed the filter section from form to div and also made it so instead of having inputs it contains buttons, also changed info icon" -->
             <div class="accommodation-and-popular">
                 <section class="accommodation">
                     <h2>Marsielle Accommodation</h2>
+                    <div class="marsielle-cards">
+                        <div class="marsielle-card">
+
+                        </div>
+                    </div>
                 </section>
                 <section class="popular">
                     <div class="popular-title">
