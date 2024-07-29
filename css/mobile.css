@@ -1,0 +1,134 @@
+body {
+    /* background-color: red; */
+    width: 320px;
+}
+
+.main-container {
+    width: inherit;
+    margin: 0;
+    padding-left: 0;
+}
+
+main {
+    width: inherit;
+}
+
+header {
+    width: inherit;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: stretch;
+    height: 115px;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.logo-container {
+    flex-grow: 1;/* bc it is column it stretches over y-axis */
+    /* align-self: center; */
+    width: min-content;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    flex-wrap: wrap;
+    width: inherit;
+}
+
+.nav-link-container {
+    justify-content: center;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 12px;
+    flex-basis: 50%;/* property assigned to elements within flex container */
+}
+
+.nav-link-container:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+}
+
+.info-container {
+    width: 290px;
+    height: 450px;
+    margin: 0 auto 30px auto;
+}
+
+.info-headline {
+    width: inherit;
+}
+
+.search-container {
+    height: 49px;
+    margin: 0 auto;
+}
+
+#search-button-desktop {
+    display: none;
+}
+
+.search-container {
+    background-color: white;
+    width: fit-content;
+    border-radius: 18px;
+    border: 1px solid #F2F2F2;
+}
+
+#search-bar {
+    border: none;
+}
+
+#search-button-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    width: 49px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 4px 1px #d9d9d9;
+}
+
+.search-icon {
+    color: white;
+}
+
+.filter-container {
+    width: inherit;
+    height: 155px;
+    flex-wrap: wrap;
+}
+
+#filter {
+    margin-bottom: 18px;
+}
+
+.filter-button-container {
+    height: 130px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.filter-button {
+    flex-basis: 120px;
+    flex-grow: 1;
+    height: 45px;
+}
+
+.filter-button:nth-child(1), .filter-button:nth-child(3) {
+    margin-right: 10px;
+}
+
+.info-container p .info-icon {
+    /* background-color: grey; */
+    width: 20px; /* because icon is no longer surrounded by circle */
+}
+
+/* .filter-button:nth-child(2), .filter-button:nth-child(4) {
+    text-wrap: nowrap;
+} */

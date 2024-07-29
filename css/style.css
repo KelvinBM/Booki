@@ -14,12 +14,13 @@
 }
 
 body {
+    max-width: 1440px;
+    min-width: 320px;
     display: flex;
     justify-content: center;
 }
 
 .main-container {
-    max-width: 1440px;
     margin: 0 auto;
     width: 100%;
     padding: 0 50px;
@@ -63,13 +64,15 @@ header {
 }
 /* width: 150px; /* logo container */
 .logo-container {
-    width: 161.09px;
+    padding: 0;
+    width: 10px;
+    height: auto;
     display: flex;
     align-items: center;
 }
 
 .logo {
-    width: 61.09px;
+    width: 60px;
 }
 
 nav {
@@ -93,6 +96,7 @@ nav {
 }
 
 .info-container {
+    width: 100%;
     height: 281px;
     margin-bottom: 35px;
     display: flex;
@@ -102,6 +106,7 @@ nav {
 
 .info-headline h1 {
     font-size: 20px;
+    margin-bottom: 6px;
 }
 
 
@@ -114,12 +119,14 @@ nav {
 
 #location-dot-container, #search-bar, #search-button-desktop, #search-button-mobile {
     box-sizing: border-box;
+    height: inherit;
     /* background-color: green; */
     border-style: none;
 }
 
 #location-dot-container {
     width: 50px;
+    height: inherit;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     display: flex;
@@ -128,10 +135,14 @@ nav {
     background-color: #F2F2F2;
 }
 
+.location-icon {
+    color: black;
+}
+
 #search-bar {
     text-align: center;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 17px;
     border-bottom: 2px solid #F2F2F2;   
     border-top: 2px solid #F2F2F2;
     width: 183px;
@@ -140,7 +151,7 @@ nav {
 #search-button-desktop {
     width: 93px;
     text-align: center;
-    font-size: 14pt;
+    font-size: 18px;
     font-weight: bold;
     background-color: #0065FC;
     color: white;
@@ -157,50 +168,50 @@ nav {
 }
 
 .filter-container {
-    width: 730px; 
+    width: 750px; 
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: gray; */
+    padding: 0;
 }
 
 .filter-button-container {
-    width: 700px;
+    width: 680px;
     height: inherit;
     display: flex;
     justify-content: space-between;
 }
 
 #filter {
-    font-size: 18px;
+    font-size: 19px;
+    height: 23px;
+    margin: 0;
 }
 
 .filter-button {
     /* text-decoration: none;/* if using anchor tag */
+    font-size: 14px;
+    font-weight: 900;
     box-sizing: border-box;
     height: inherit;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding-left: 18px;
     padding-right: 18px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
     display: flex;
-    font-size: 16px;
     font-weight: bold;
     background-color: white;
 }
 
-.filter-icon {
-    margin-right: 10px;
-    color: #0065FC;
-}
-
-
 .filter-button:hover {
     background-color: #DEEBFF;
+}
+
+.filter-icon {
+    margin-right: 8px;
 }
 
 .info {
@@ -296,89 +307,4 @@ nav {
 
 .popular-cards .card-rating {
     margin-bottom: 5px;
-}
-
-
-/****** Mobile view ***********/
-@media (max-width: 320px) {
-    .main-container {
-        width: 320px;
-    }
-
-    header {
-        width: inherit;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: center;
-    }
-
-    .logo-container {
-        /* background-color: red; */
-        display: flex;
-        align-items: center;
-        align-self: center;
-        width: fit-content;
-    }
-
-    nav {
-        flex-direction: column;
-        flex-wrap: wrap;/* puts default of align-content: stretch; */
-    }
-
-    .nav-link-container {
-        border-bottom: 1px solid #d9d9d9;
-        width: auto;
-        padding-bottom: 12px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav-link-container:hover {
-        border-top: none;
-        border-bottom: 1px solid #0065FC;
-    }
-
-    #search-button-desktop {
-        display: none;
-    }
-
-    #search-bar {
-        border: none;
-    }
-
-    .search-container {
-        width: fit-content;
-        border-radius: 18px;
-        border: 1px solid #F2F2F2;
-    }
-
-    #search-button-mobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #0065FC;
-        width: 49px;
-        border-radius: 14px;
-        box-shadow: 0 4px 4px 1px #d9d9d9;
-    }
-
-    .search-icon {
-        color: white;
-    }
-
-    .filter-container {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: space-between;
-    }
-
-    .filter-button-container {
-        width: 320px;
-        flex-wrap: wrap;
-
-    }
-
-    .filter-button {
-        width: auto;
-    }
 }
