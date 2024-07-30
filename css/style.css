@@ -170,7 +170,7 @@ nav {
 }
 
 .filter-container {
-    width: 750px; 
+    width: 670px; 
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -179,7 +179,7 @@ nav {
 }
 
 .filter-button-container {
-    width: 680px;
+    width: 600px;
     height: inherit;
     display: flex;
     justify-content: space-between;
