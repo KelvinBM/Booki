@@ -1,4 +1,4 @@
-body, ul, li, div, a, p, input[type=button], header, img {
+body, ul, li, div, a, p, input[type=button], header, img, a {
     margin: 0;
     padding: 0;
 }
