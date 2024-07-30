@@ -1,0 +1,33 @@
+.accommodation .card {
+    width: 260px;
+}
+
+.accommodation-and-popular {
+    flex-direction: column;
+    height: 880px;
+}
+
+.accommodation {
+    width: 100%;
+    height: 600px;
+}
+
+.popular {
+    height: 250px;
+    width: 100%;
+}
+
+.popular-cards {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+.popular-cards .card {
+    margin-top: 15px;
+    width: 30%;
+}
+
+/* .card-txt {
+    text-wrap: nowrap;
+} */

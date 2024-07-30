@@ -4,13 +4,7 @@ body {
 }
 
 .main-container {
-    width: inherit;
-    margin: 0;
-    padding-left: 0;
-}
-
-main {
-    width: inherit;
+    padding: 0;
 }
 
 header {
@@ -104,7 +98,7 @@ nav {
 }
 
 #filter {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 
 .filter-button-container {
@@ -126,9 +120,89 @@ nav {
 
 .info-container p .info-icon {
     /* background-color: grey; */
-    width: 20px; /* because icon is no longer surrounded by circle */
+    width: 20px; /* used bc icon is no longer surrounded by circle */
 }
 
-/* .filter-button:nth-child(2), .filter-button:nth-child(4) {
-    text-wrap: nowrap;
-} */
+main .accommodation-and-popular {
+    flex-direction: column-reverse;
+    /* height: 1500px; */
+    height: 1900px;
+    margin-bottom: 95px;
+}
+
+.accommodation-and-popular section {
+    border-radius: 0;
+    padding: 30px 20px;
+    justify-content: start;
+}
+
+.section-title {
+    font-size: 20px;
+}
+
+.accommodation-and-popular #accommodation {
+    /* background-color: rebeccapurple; */
+    background-color: white;
+    height: 1300px;
+    /* background-color: white; */
+}
+
+.accommodation-cards .card-text, .popular-cards .card-txt {
+    font-size: 13px;
+}
+
+/*** POPULAR ***/
+.popular {
+    height: 600px;
+}
+
+.popular-cards {
+    flex-direction: column;
+}
+
+.popular-cards .card {
+    width: inherit;
+    height: 150px;
+}
+
+.popular-cards img {
+    height: inherit;
+}
+
+.popular-cards .card-title {
+    font-size: 15px;
+}
+
+/*** ACCOMMODATION ***/
+#accommodation {
+    background-color: white;
+}
+
+.cards-container  {
+    width: inherit;
+    flex-direction: column;
+}
+
+.accommodation-cards {
+    height: auto;
+}
+
+.accommodation-cards .card {
+    width: inherit;
+    height: 180px;
+    margin-top: 15px;
+}
+
+.accommodation-cards img {
+    height: 105px;
+    width: inherit;
+}
+
+.accommodation-cards .card-title {
+    font-size: 15px;
+}
+
+#show-more {
+    font-size: 17px;
+    margin-top: 10px;
+}

@@ -16,15 +16,14 @@
 body {
     max-width: 1440px;
     min-width: 320px;
-    display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-container {
-    margin: 0 auto;
     width: 100%;
     padding: 0 50px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .section-title {
@@ -36,7 +35,7 @@ body {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.15));
 }
 
 .card img {
@@ -54,18 +53,17 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
-/* height: 79px; /* header height */
+
 header {
-    /* background-color: #DEEBFF; */
+    width: 100%;
     height: 79px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
 }
-/* width: 150px; /* logo container */
+
 .logo-container {
     padding: 0;
-    width: 10px;
     height: auto;
     display: flex;
     align-items: center;
@@ -76,7 +74,6 @@ header {
 }
 
 nav {
-    /* background-color: #4d7cc4; */
     width: 285px;
     height: 35px;
     display: flex;
@@ -88,7 +85,6 @@ nav {
     align-items: end;
     text-decoration: none;
     color: black;
-    /* font-weight: 500; */
 }
 
 .nav-link-container:hover {
@@ -99,7 +95,8 @@ nav {
 
 .info-container {
     width: 100%;
-    height: 281px;
+    height: 275px;
+    margin-top: 10px;
     margin-bottom: 35px;
     display: flex;
     flex-direction: column;
@@ -115,14 +112,12 @@ nav {
 .search-container {
     width: fit-content;
     height: 49px;
-    /* background-color: #DEEBFF; */
     display: flex;
 }
 
 #location-dot-container, #search-bar, #search-button-desktop, #search-button-mobile {
     box-sizing: border-box;
     height: inherit;
-    /* background-color: green; */
     border-style: none;
 }
 
@@ -192,7 +187,6 @@ nav {
 }
 
 .filter-button {
-    /* text-decoration: none;/* if using anchor tag */
     font-size: 14px;
     font-weight: 900;
     box-sizing: border-box;
@@ -233,21 +227,6 @@ nav {
     color: #0065FC;
 }
 
-/* width: 62px; /* logo */
-/* nav
-    width: 280px;
-        OR
-    width: 360px;
-    height: 35px; 
-*/
-
-/* nav link
-    font-size: 11pt; 
-    border-top: 2px solid #0065FC;
-*/
-
-
-
 /****** Accommodation And Popular ***********/
 .accommodation-and-popular {
     display: flex;
@@ -264,11 +243,42 @@ nav {
 /****** Accommodation ***********/
 .accommodation {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accommodation h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clickable-container {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.accommodation-cards {
+    margin: 0;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .accommodation-cards .card {
-    width: 250px;
-    height: 210px;
+    width: 240px;
+    height: 195px;
+    display: flex; 
+    flex-direction: column;
 }
 
 .accommodation-cards img {
@@ -277,7 +287,32 @@ nav {
     border-image-slice: 100;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    background-color: red;
+}
+
+.accommodation-cards .card-content {
+    flex-grow: 1;
+    margin: 11px 11px 5px 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accommodation-cards .card-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.accommodation-cards .card-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#show-more {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 900;
 }
 
 /****** Popular ***********/
