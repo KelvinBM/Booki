@@ -1,20 +1,34 @@
-body {
-    width: 768px;
+.accommodation-and-popular {
+    flex-direction: column;
 }
 
-.main-container {
-    padding: 0 25px;
+.accommodation {
+    width: 100%;
 }
 
-.accommodation-cards .card {
-    width: 10px;
+.accommodation-cards {
+    margin: 20px 0 25px 0;
 }
 
-.accommodation-cards img {
-    height: 110px;
+.popular {
+    width: 100%;
+}
+
+.popular-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.popular-cards .card {
+    flex-basis: 200px;
+    flex-grow: 1;
+    box-sizing: border-box;
 }
 
 .popular-cards img {
     height: 100%;
-    width: 80px;
+}
+
+.activities-card img {
+    height: 200px;
 }
