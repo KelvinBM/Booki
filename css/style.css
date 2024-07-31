@@ -16,8 +16,8 @@
 body {
     max-width: 1440px;
     min-width: 320px;
-    display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-container {
@@ -29,7 +29,83 @@ body {
 
 .section-title {
     margin: 0;
+    padding: 0;
     font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.15));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+header {
+    width: 100%;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    padding: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+}
+
+nav {
+    width: 285px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+}* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid, .fa-regular {
+    color: var(--main-color);
+}
+
+body {
+    max-width: 1440px;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .card {
@@ -54,6 +130,12 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
+
+.star-grey {
+    background-color: #d9d9d9;
+    color: #d9d9d9;
+}
+
 /* height: 79px; /* header height */
 header {
     /* background-color: #DEEBFF; */
@@ -99,7 +181,7 @@ nav {
 
 .info-container {
     width: 100%;
-    height: 281px;
+    gap: 30px;
     margin-bottom: 35px;
     display: flex;
     flex-direction: column;
@@ -170,25 +252,23 @@ nav {
 }
 
 .filter-container {
-    width: 670px; 
-    height: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .filter-button-container {
-    width: 600px;
     height: inherit;
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
+    /* background-color: red; */
 }
 
 #filter {
     font-size: 19px;
     height: 23px;
     margin: 0;
+    align-self: center;
 }
 
 .filter-button {
@@ -196,9 +276,10 @@ nav {
     font-size: 14px;
     font-weight: 900;
     box-sizing: border-box;
-    height: inherit;
+    height: 50px;
     display: flex;
     align-items: center;
+    gap: 5px;
     padding-left: 18px;
     padding-right: 18px;
     border: 2px solid #d9d9d9;
@@ -210,10 +291,6 @@ nav {
 
 .filter-button:hover {
     background-color: #DEEBFF;
-}
-
-.filter-icon {
-    margin-right: 8px;
 }
 
 .info {
@@ -233,25 +310,11 @@ nav {
     color: #0065FC;
 }
 
-/* width: 62px; /* logo */
-/* nav
-    width: 280px;
-        OR
-    width: 360px;
-    height: 35px; 
-*/
-
-/* nav link
-    font-size: 11pt; 
-    border-top: 2px solid #0065FC;
-*/
-
-
-
 /****** Accommodation And Popular ***********/
 .accommodation-and-popular {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .accommodation-and-popular section {
@@ -261,14 +324,34 @@ nav {
     box-sizing: border-box;
 }
 
+
 /****** Accommodation ***********/
 .accommodation {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accommodation-cards {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.clickable-container {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
 
 .accommodation-cards .card {
-    width: 250px;
-    height: 210px;
+    min-width: 245px;
+    height: 195px;
+    display: flex; 
+    flex-direction: column;
 }
 
 .accommodation-cards img {
@@ -277,23 +360,46 @@ nav {
     border-image-slice: 100;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    background-color: red;
 }
+
+.accommodation-cards .card-content {
+    flex-grow: 1;
+    margin: 11px 11px 5px 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accommodation-cards .card-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.accommodation-cards .card-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#show-more {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 900;
+}
+
 
 /****** Popular ***********/
 .popular {
     width: 32%;
-}
-
-.popular-title {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .popular-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-bottom: 20px;
 }
 
 .popular-cards img {
@@ -314,9 +420,10 @@ nav {
     font-weight: 500;
 }
 
-.popular-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .popular-cards .card-subtitle {
@@ -325,4 +432,49 @@ nav {
 
 .popular-cards .card-rating {
     margin-bottom: 5px;
+}
+
+
+/*** ACTIVITIES ***/
+.activities-container {
+    margin-top: 040px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;/* for flex as column it modifies vertical spacing between items */
+    gap: 30px;
+}
+
+.activities-cards {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.activities-card {
+    flex-basis: 115px;
+    flex-grow: 1;
+}
+
+.activities-card img {
+    width: 100%;
+    height: 360px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.048);
+    object-fit: cover;
+}
+
+.activities-card h3 {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 14px 15px rgba(0, 0, 0, 0.102);
 }

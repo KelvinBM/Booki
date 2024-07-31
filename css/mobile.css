@@ -1,16 +1,5 @@
-body {
-    /* background-color: red; */
-    width: 320px;
-}
-
 .main-container {
-    width: inherit;
-    margin: 0;
-    padding-left: 0;
-}
-
-main {
-    width: inherit;
+    padding: 0;
 }
 
 header {
@@ -37,14 +26,14 @@ header {
 
 nav {
     flex-wrap: wrap;
-    width: inherit;
+    width: 100%;
 }
 
 .nav-link-container {
     justify-content: center;
     border-bottom: 2px solid #d9d9d9;
     padding-bottom: 12px;
-    flex-basis: 50%;/* property assigned to elements within flex container */
+    flex-basis: 50%;/* to give elements within a flex container a base width OR height */
 }
 
 .nav-link-container:hover {
@@ -53,18 +42,13 @@ nav {
 }
 
 .info-container {
-    width: 290px;
-    height: 450px;
-    margin: 0 auto 30px auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .info-headline {
     width: inherit;
-}
-
-.search-container {
-    height: 49px;
-    margin: 0 auto;
 }
 
 #search-button-desktop {
@@ -73,7 +57,6 @@ nav {
 
 .search-container {
     background-color: white;
-    width: fit-content;
     border-radius: 18px;
     border: 1px solid #F2F2F2;
 }
@@ -98,37 +81,78 @@ nav {
 }
 
 .filter-container {
-    width: inherit;
-    height: 155px;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
 }
 
 #filter {
-    margin-bottom: 18px;
+    align-self: flex-start;
 }
 
 .filter-button-container {
-    height: 130px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
-.filter-button {
-    flex-basis: 120px;
-    flex-grow: 1;
-    height: 45px;
+@media (max-width: 425px) {
+    .filter-button {
+        flex-basis: 160px;
+        flex-grow: 1;
+    }
 }
 
-.filter-button:nth-child(1), .filter-button:nth-child(3) {
-    margin-right: 10px;
+@media (max-width: 320px) {
+    .filter-button {
+        flex-basis: 115px;
+    }
+    .info-icon {
+        width: 24px;
+    }
 }
 
-.info-container p .info-icon {
-    /* background-color: grey; */
-    width: 20px; /* because icon is no longer surrounded by circle */
+/* @media (max-width: ) */
+
+.accommodation-and-popular {
+    flex-direction: column-reverse;
 }
 
-/* .filter-button:nth-child(2), .filter-button:nth-child(4) {
-    text-wrap: nowrap;
-} */
+.accommodation-and-popular .accommodation, .accommodation-and-popular .popular {
+    border-radius: 0;
+    padding: 15px;
+}
+
+.accommodation-and-popular .accommodation {
+    background-color: white;
+}
+
+.accommodation-cards {
+    flex-direction: column;
+}
+
+.popular-cards {
+    flex-direction: column;
+}
+
+.popular-cards .card {
+    height: 146px;
+}
+
+.info {
+    margin-right: 15px;
+}
+
+.activities-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.activities-cards {
+    flex-direction: column;
+    gap: 0;
+}
+
+.activities-card img {
+    height: 120px;
+}
