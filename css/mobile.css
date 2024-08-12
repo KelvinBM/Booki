@@ -98,20 +98,27 @@ nav {
 }
 
 .filter-button {
-    flex-basis: 240px;
+    width: 35%;
     flex-grow: 1;
 }
 
-/* @media (max-width: 425px) {
-    .filter-button {
-        flex-basis: 130px;
+@media (max-width: 425px) {
+    #family-friendly {
+        padding: 0;
     }
-} */
+
+    #family-friendly .filter-icon {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .info-icon {
+        width: 18px;
+    }
+}
 
 @media (max-width: 320px) {
-    .filter-button {
-        flex-basis: 115px;
-    }
     .info-icon {
         width: 24px;
     }

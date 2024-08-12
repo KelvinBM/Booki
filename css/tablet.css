@@ -1,3 +1,11 @@
+.filter-container {
+    flex-direction: column;
+}
+
+#filter {
+    align-self: flex-start;
+}
+
 .accommodation-and-popular {
     flex-direction: column;
 }
