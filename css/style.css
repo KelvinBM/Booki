@@ -16,12 +16,10 @@
 body {
     max-width: 1440px;
     min-width: 320px;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .main-container {
-    margin: 0 auto;
     width: 100%;
     padding: 0 50px;
     box-sizing: border-box;
@@ -377,7 +375,14 @@ nav {
 }
 
 
-/*** ACTIVITIES ***/
+/***** ACTIVITIES *****/
+.clickable-card {
+    color: black;
+    text-decoration: none;
+    flex-basis: 115px;
+    flex-grow: 1;
+}
+
 .activities-container {
     margin-top: 30px;
     padding-top: 20px;
@@ -393,11 +398,6 @@ nav {
     display: flex;
     width: 100%;
     gap: 30px;
-}
-
-.activities-card {
-    flex-basis: 115px;
-    flex-grow: 1;
 }
 
 .activities-card img {
