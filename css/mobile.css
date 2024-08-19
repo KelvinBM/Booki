@@ -14,7 +14,8 @@ header {
 }
 
 .logo-container {
-    flex-grow: 1;/* bc it is column it stretches over y-axis */
+    flex-grow: 1;
+    /* bc it is column it stretches over y-axis */
     /* align-self: center; */
     width: min-content;
 }
@@ -33,7 +34,8 @@ nav {
     justify-content: center;
     border-bottom: 2px solid #d9d9d9;
     padding-bottom: 12px;
-    flex-basis: 50%;/* to give elements within a flex container a base width OR height */
+    flex-basis: 50%;
+    /* to give elements within a flex container a base width OR height */
 }
 
 .nav-link-container:hover {
@@ -100,23 +102,18 @@ nav {
     flex-grow: 1;
 }
 
-@media (max-width: 425px) {
-    #family-friendly {
-        padding: 0;
-    }
-
-    #family-friendly .filter-icon {
-        padding-left: 10px;
-    }
-}
-
 @media (max-width: 375px) {
     .info-icon {
         width: 18px;
     }
+}
 
+@media (max-width: 365px) {
+
+    #family-friendly,
     #top-picks {
-        padding: 0 10px;
+        padding-left: 10px;
+        padding-right: 0;
     }
 }
 
@@ -130,7 +127,8 @@ nav {
     flex-direction: column-reverse;
 }
 
-.accommodation-and-popular .accommodation, .accommodation-and-popular .popular {
+.accommodation-and-popular .accommodation,
+.accommodation-and-popular .popular {
     border-radius: 0;
     padding: 15px;
 }
