@@ -1,3 +1,7 @@
+body {
+    padding: 0;
+}
+
 .main-container {
     padding: 0;
 }
@@ -147,6 +151,7 @@ nav {
 
 .popular-cards .card {
     flex-basis: 136px;
+    max-width: 100%;
 }
 
 .info {

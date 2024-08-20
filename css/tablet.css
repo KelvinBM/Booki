@@ -24,13 +24,17 @@
 
 .popular-cards {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 .popular-cards .card {
-    flex-basis: 200px;
+    flex-basis: 260px;
     flex-grow: 1;
     box-sizing: border-box;
+    max-width: 280px;
+    width: 100%;
 }
 
 .popular-cards img {
