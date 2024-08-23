@@ -106,11 +106,6 @@ nav {
     flex-grow: 1;
 }
 
-@media (max-width: 375px) {
-    .info-icon {
-        width: 18px;
-    }
-}
 
 @media (max-width: 380px) {
 
@@ -118,6 +113,12 @@ nav {
     #top-picks {
         padding-left: 10px;
         padding-right: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .info-icon {
+        width: 18px;
     }
 }
 
